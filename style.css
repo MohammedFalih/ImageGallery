@@ -2,17 +2,18 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: #333;
-    color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
+body {
+    background-color: black;
+}
 h1 {
     font-size: 60px;
     text-align: center;
     letter-spacing: 5px;
     word-spacing: 10px;
     padding: 10px;
+    color: aqua;
     margin-top: 40px;
 }
 
@@ -20,11 +21,49 @@ h1 {
     width: 90%;
     margin: 60px auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-gap: 30px;
 }
 
 .images img {
     width: 100%;
     height: 600px;
+}
+
+.images img:hover {
+    box-shadow: rgb(186, 206, 229) 0px 20px 30px -10px;
+    cursor: pointer;
+}
+
+.fullImgBox {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.fullImgBox img {
+    width: 70%;
+    max-width: 500px;
+    max-height: 700px;
+}
+
+.fullImgBox span {
+    position: absolute;
+    top: 2%;
+    right: 5%;
+    color: white;
+    font-size: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.fullImgBox span:hover {
+    color: blueviolet;
+    background-color: white;
 }

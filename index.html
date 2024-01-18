@@ -8,16 +8,22 @@
 </head>
 <body>
     <h1>IMAGE GALLERY</h1>
-        <div class="images">
-            <img src="images/bugatti.jpg">
-            <img src="images/dodge.jpg">
-            <img src="images/ferrai.jpg">
-            <img src="images/gtr.jpg">
-            <img src="images/lamborghini.jpg">
-            <img src="images/mustang.jpg">
-            <img src="images/porsche.jpg">
-            <img src="images/supra.jpg">
-            <img src="images/jaguar.jpg">
-        </div>
+    <div class="fullImgBox" id="fullImageBox">
+        <img src="images/bugatti.jpg" id="fullImg">
+        <span id="closeBtn" onclick="closeBtn()">X</span>
+    </div>
+    <div class="images">
+        <img src="images/bugatti.jpg" onclick="openImg(this.src)">
+        <img src="images/dodge.jpg" onclick="openImg(this.src)">
+        <img src="images/ferrai.jpg" onclick="openImg(this.src)">
+        <img src="images/gtr.jpg" onclick="openImg(this.src)">
+        <img src="images/lamborghini.jpg" onclick="openImg(this.src)">
+        <img src="images/mustang.jpg"onclick="openImg(this.src)">
+        <img src="images/porsche.jpg" onclick="openImg(this.src)">
+        <img src="images/supra.jpg" onclick="openImg(this.src)">
+        <img src="images/jaguar.jpg" onclick="openImg(this.src)">
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
